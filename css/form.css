@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Trade+Winds&display=swap');
+label{
+    font-weight: bold;
+}
+.formulario{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+label, .formulario{
+    margin: 10px 0;
+}
+.btn-submit, .btn-reset{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn-submit{
+    background: green;
+}
+.btn-reset{
+    background: red;
+}
+.formulario:focus{
+    background: lightyellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background:rgb(234, 192, 137);
+}
+.rodape {
+    padding: 32px;
+     border-top: 0.4px solid #fff;
+     text-align: center;
+     font-family: "New Rocker", system-ui;
+  font-weight: 400;
+    font-size: 24px;
+     color: rgb(0, 0, 0);
+    
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+
+}
+.cabecalho-imagem {
+    height: 72px ;
+    
+}
+.cabecalho-menu-item {
+     font-family: "Trade Winds", system-ui;
+     color: black;
+     font-weight: 400;
+     font-size: 18px;
+}
+.pagina{
+    width: 100%; 
+    background-color: white;
+    box-shadow: 1px 1px 10px #ccc;
+    padding: 10px; 
+    box-sizing: border-box;
+    float: left;
+}

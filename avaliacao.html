@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um jogo criado do 0">
+    <link rel="shortcut icon" href="imagens/Jogador.png">
+    <title>As aventuras de Cristhen</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <script src="javascript/script.js"></script>
+</head>
+<body>
+    <body class="mobile">
+    <header class="cabecalho pagina">
+        <a href="index.html" title=" Home">
+        <img class="cabecalho-imagem" src="imagens/logo.webp" alt="Início" title="Início">
+        </a>
+        
+          <nav class="cabecalho-menu mobile">
+            <a class="cabecalho-menu-item mobile" href="index.html" title="Home">
+                <i class="fa-solid fa-house icons" ></i>
+                Home
+            </a>
+           
+            <a class="cabecalho-menu-item mobile" href="sobre.html" title="Sobre">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Sobre
+            </a>
+            <a class="cabecalho-menu-item mobile" href="galeria.html" title="Galeria">
+                <i class="fa-solid fa-camera"></i>
+                Galeria
+            </a>
+            <a class="cabecalho-menu-item mobile" href="jogo.html" title="Jogo">
+                <i class="fa-solid fa-gamepad"></i>
+                Jogo
+            </a>
+           
+        </nav>
+    </header>
+    <h1>Sua experiência</h1>
+    <form name="form-cadastro" method="post" action="http://www.professorbrunes.com.br/teste-form.php">
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome completo" autocomplete="off" required class="formulario">
+        <br>
+        <label for="email">Digite seu e-mail:</label>
+        <input type="email" name="email" id="email"
+        maxlength="50" placeholder="Digite um e-mail válido"
+        autocomplete="off" required class="formulario" inputmode="email">
+        <label for="dataNascimento">Data Nascimento:</label>
+        <input type="date" name="dataNascimento" id="dataNascimento" class="formulario" autocomplete="off">
+       
+        </select>
+        
+        <br><br>
+        <label for="genero">Selecione seu Gênero:</label>
+        <br>
+        <input type="radio" name="genero" value="M"> Masculino
+        <input type="radio" name="genero" value="F"> Feminino
+        <input type="radio" name="genero" value="N"> Não informar
+        <br><br>
+        <label for="curso">Sobre o Jogo:</label>
+        <input type="checkbox" name="tads"> Gostei
+        <input type="checkbox" name="si"> Não gostei
+        <br>
+        <label for="mensagem">Escreva sua mensagem:</label>
+        <textarea name="mensagem" id="mensagem" required placeholder="Digite uma mensagem" class="formulario" rows="5"></textarea>
+        
+        <button type="submit" class="btn-submit">
+            Enviar Dados
+        </button>
+        <button type="reset" class="btn-reset">
+            Redefinir
+        </button>
+
+    </form>
+    <footer class="rodape pagina">
+          <p>Curso de Tecnologia em Análise e Desenvolvimento de Sistemas
+            <br>
+            Desenvolvido por Hellen Cristina</p>
+    </footer>
+</body>
+</html>
