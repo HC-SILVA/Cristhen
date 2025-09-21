@@ -12,34 +12,40 @@
 </head>
 <body>
     <body class="mobile">
-    <header class="cabecalho pagina">
-        <a href="index.html" title=" Home">
+     <header class="cabecalho">
+         <button class="mobile-menu burguer" onclick="mostrarMenu()">
+                <i class="fa-solid fa-bars"></i></button>
+        <a href="index.html" title=" Home"> 
         <img class="cabecalho-imagem" src="imagens/logo.webp" alt="Início" title="Início">
         </a>
         
-          <nav class="cabecalho-menu mobile">
-            <a class="cabecalho-menu-item mobile" href="index.html" title="Home">
+        <nav id="itens" class="cabecalho-menu mobile">
+            <a class="cabecalho-menu-item mobile open" href="index.html" title="Home">
                 <i class="fa-solid fa-house icons" ></i>
                 Home
             </a>
            
-            <a class="cabecalho-menu-item mobile" href="sobre.html" title="Sobre">
+            <a class="cabecalho-menu-item mobile open" href="sobre.html" title="Sobre">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 Sobre
             </a>
-            <a class="cabecalho-menu-item mobile" href="galeria.html" title="Galeria">
+            <a class="cabecalho-menu-item mobile open" href="galeria.html" title="Galeria">
                 <i class="fa-solid fa-camera"></i>
                 Galeria
             </a>
-            <a class="cabecalho-menu-item mobile" href="jogo.html" title="Jogo">
+            <a class="cabecalho-menu-item mobile open" href="jogo.html" title="Jogo">
                 <i class="fa-solid fa-gamepad"></i>
                 Jogo
             </a>
-           
+           <a class="cabecalho-menu-item mobile open" href="avaliacao.html" title="Avaliação">
+                <i class="fa-solid fa-comments"></i>
+                Avaliação
+            </a>
+        
         </nav>
     </header>
     <h1>Sua experiência</h1>
-    <form name="form-cadastro" method="post" action="http://www.professorbrunes.com.br/teste-form.php">
+    <form name="form-cadastro">
         <label for="nome">Digite seu nome:</label>
         <input type="text" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome completo" autocomplete="off" required class="formulario">
         <br>
@@ -47,8 +53,9 @@
         <input type="email" name="email" id="email"
         maxlength="50" placeholder="Digite um e-mail válido"
         autocomplete="off" required class="formulario" inputmode="email">
+        
         <label for="dataNascimento">Data Nascimento:</label>
-        <input type="date" name="dataNascimento" id="dataNascimento" class="formulario" autocomplete="off">
+        <input type="date" name="dataNascimento" id="dataNascimento" class="formulario" autocomplete="off" required class="formulario" >
        
         </select>
         
@@ -58,10 +65,11 @@
         <input type="radio" name="genero" value="M"> Masculino
         <input type="radio" name="genero" value="F"> Feminino
         <input type="radio" name="genero" value="N"> Não informar
-        <br><br>
-        <label for="curso">Sobre o Jogo:</label>
-        <input type="checkbox" name="tads"> Gostei
-        <input type="checkbox" name="si"> Não gostei
+        <br><br><br>
+        
+        <label for="sobre o jogo">Sobre o Jogo:</label>
+        <input type="radio" name="gostei" value="G"> Gostei
+        <input type="radio" name="nao gostei" value="N"> Não gostei
         <br>
         <label for="mensagem">Escreva sua mensagem:</label>
         <textarea name="mensagem" id="mensagem" required placeholder="Digite uma mensagem" class="formulario" rows="5"></textarea>

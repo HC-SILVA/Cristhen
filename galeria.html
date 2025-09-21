@@ -12,30 +12,36 @@
 </head>
 
 <body class="mobile">
-    <header class="cabecalho pagina">
-        <a href="index.html" title=" Home">
+    <header class="cabecalho">
+         <button class="mobile-menu burguer" onclick="mostrarMenu()">
+                <i class="fa-solid fa-bars"></i></button>
+        <a href="index.html" title=" Home"> 
         <img class="cabecalho-imagem" src="imagens/logo.webp" alt="Início" title="Início">
         </a>
         
-          <nav class="cabecalho-menu mobile">
-            <a class="cabecalho-menu-item mobile" href="index.html" title="Home">
+        <nav id="itens" class="cabecalho-menu mobile">
+            <a class="cabecalho-menu-item mobile open" href="index.html" title="Home">
                 <i class="fa-solid fa-house icons" ></i>
                 Home
             </a>
            
-            <a class="cabecalho-menu-item mobile" href="sobre.html" title="Sobre">
+            <a class="cabecalho-menu-item mobile open" href="sobre.html" title="Sobre">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 Sobre
             </a>
-            <a class="cabecalho-menu-item mobile" href="galeria.html" title="Galeria">
+            <a class="cabecalho-menu-item mobile open" href="galeria.html" title="Galeria">
                 <i class="fa-solid fa-camera"></i>
                 Galeria
             </a>
-            <a class="cabecalho-menu-item mobile" href="jogo.html" title="Jogo">
+            <a class="cabecalho-menu-item mobile open" href="jogo.html" title="Jogo">
                 <i class="fa-solid fa-gamepad"></i>
                 Jogo
             </a>
-           
+           <a class="cabecalho-menu-item mobile open" href="avaliacao.html" title="Avaliação">
+                <i class="fa-solid fa-comments"></i>
+                Avaliação
+            </a>
+        
         </nav>
     </header>
     <main class="conteudo">
@@ -43,10 +49,9 @@
             <div class="conteudo-principal-escrito-titulo">
                 <h1> Galeria </h1>
                 <br>
-                <br>
-                <h2 class="conteudo-principal-escrito-subtitulo">  </h2>
-                 <p>Aqui você encontra fotos desse projeto</p>
-            
+                 <p class="conteudo-principal-escrito-subtitulo">Aqui você encontra fotos desse projeto.</p>
+                 <br>
+                 <p class="conteudo-principal-escrito-subtitulo">Lembre-se essas imagens são só o começo… o verdadeiro desafio te espera no jogo.</p>
                 <img class="galeria" src="imagens/jogo1.png" alt="Imagem do Jogo">
                 <img class="galeria" src="imagens/jogo2.png" alt="Imagem do Jogo">
                 <img class="galeria" src="imagens/jogo3.png" alt="Imagem do Jogo">
